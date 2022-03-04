@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 m-auto py-5">
+                <div class="form-group">
+
+                    <label for=""> Product Name</label>
+                    <input id="productNameInp" type="text" class="form-control">
+                    <small>Product Name is Required</small>
+                </div>
+                <div class="form-group">
+
+                    <label for=""> Product Price</label>
+                    <input id="productPriceInp" type="text" class="form-control">
+                    <small>Product Price is Required</small>
+                </div>
+                <div class="form-group">
+
+                    <label for=""> Product Category</label>
+                    <input id="productCategoryInp" type="text" class="form-control">
+                    <small>Product Category is Required</small>
+                </div>
+                <div class="form-group">
+
+                    <label for=""> Product Descreption</label>
+                    <textarea id="productDescInp" class="form-control"></textarea>
+                    <small>Product Name is Required</small>
+                </div>
+
+                <button onclick="addproduct()" class="btn btn-info">Add Product</button>
+                <button onclick=" clear()" class="btn btn-info">Reset</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 m-auto">
+                <table class="table ">
+                    <thead>
+                        <th>index</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Descraption</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="tableData">
+
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
